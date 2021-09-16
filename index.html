@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Student Registration</title>
+  </head>
+  <body>
+    <form method="post ">
+    <h1>Online Taxi</h1>
+    <fieldset>
+    <legend>Customer Details</legend>
+    <p>Customer Name<input type="text" name="name" id="CID" required ></p>
+    <p>Customer Mobile Phone<input type="tel" id="CID" name="Phone" required></p>
+    <p>Email<input type="email" name="email" id="EMAIL" required></p>
+    <p>Pickup Address</p><Textarea rows="3" cols="50" id="STADD" name="Address"required></Textarea></p>
+    </fieldset>
+    <fieldset>
+      <legend>Vehicle Details</legend>
+      <p>Vehicle type</p>
+      <select id="vtype" required>
+        <option value="car">Car</option>
+        <option value="jeep">Jeep</option>
+        <option value="van">Van</option>
+      </select>  
+      <p>Air Condition</p>
+      <input type="radio" id="AC" name="air" value="ac" required>With A/C
+      <input type="radio" id="AC" name="air" value="non-ac" required>Without A/C
+      <p>Tour Staff</p>
+      <input type="checkbox" name="drive" value="driver" required>with Driver
+      <input type="checkbox" name="Tour" value="guid" required>with Tour guid
+    </fieldset>
+    <fieldset>
+      <legend>Trip Date</legend>
+      <p>starting date<input type="date" name="sdate" id="sdate" required>Time<input type="time" name="stime" id="stime"></p>
+      <p>End date<input type="date" name="edate" id="edate" required>Time<input type="time" name="etime" id="etime"></p>
+    </fieldset><br>
+    <input type="submit"><input type="reset">
+  </body>
+</html>
